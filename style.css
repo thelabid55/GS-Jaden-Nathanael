@@ -1,0 +1,22 @@
+/* Custom basic styling to ensure crisp text and layout */
+body {
+    background-color: theme('colors.primary');
+    color: theme('colors.textcol');
+}
+
+/* Utility class for aspect ratio of image placeholders */
+.aspect-placeholder {
+    aspect-ratio: 4/3;
+}
+
+/* Hide scrollbar for horizontal scrolling containers */
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scroll {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
