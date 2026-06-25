@@ -372,3 +372,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
     animatedElements.forEach(el => scrollObserver.observe(el));
 });
+
+// ==========================================
+// Hero Slider Animation
+// ==========================================
+const heroSliderTrack = document.getElementById('hero-slider-track');
+const heroSliderDotsContainer = document.getElementById('hero-slider-dots');
+
+if (heroSliderTrack && heroSliderDotsContainer) {
+    const totalHeroSlides = heroSliderTrack.children.length;
+    let currentHeroSlide = 0;
+
+    // Create dots
+    heroSliderDotsContainer.innerHTML = Array.from({ length: totalHeroSlides }).map((_, idx) => `
+        <button onclick="goToHeroSlide(${idx})" class="w-2 h-2 rounded-full transition-all duration-300 ${idx === 0 ? 'bg-secondary w-6' : 'bg-gray-400 hover:bg-gray-600'}" aria-label="Go to slide ${idx + 1}"></button>
+    `).join('');
+
+    const dots = heroSliderDotsContainer.querySelectorAll('button');
+
+    function updateHeroDots() {
+        dots.forEach((dot, idx) => {
+            if (idx === currentHeroSlide) {
+                dot.className = 'w-6 h-2 rounded-full transition-all duration-300 bg-secondary';
+            } else {
+                dot.className = 'w-2 h-2 rounded-full transition-all duration-300 bg-gray-400 hover:bg-gray-600';
+            }
+        });
+    }
+
+    window.goToHeroSlide = function(idx) {
+        currentHeroSlide = idx;
+        heroSliderTrack.style.transform = `translateX(-${currentHeroSlide * 100}%)`;
+        updateHeroDots();
+        resetHeroSliderInterval();
+    };
+
+    function nextHeroSlide() {
+        currentHeroSlide = (currentHeroSlide + 1) % totalHeroSlides;
+        heroSliderTrack.style.transform = `translateX(-${currentHeroSlide * 100}%)`;
+        updateHeroDots();
+    }
+
+    let heroSliderInterval = setInterval(nextHeroSlide, 4000);
+
+    function resetHeroSliderInterval() {
+        clearInterval(heroSliderInterval);
+        heroSliderInterval = setInterval(nextHeroSlide, 4000);
+    }
+}

@@ -124,12 +124,29 @@
                         </button>
                     </div>
                 </div>
-                <!-- Right: Image Placeholder -->
-                <div
-                    class="bg-gray-200 rounded-lg aspect-placeholder flex items-center justify-center relative overflow-hidden group">
-                    <img src="https://storage.googleapis.com/takeapp/media/clybcju5i00010cl74iv17zf7.jpg"
-                        alt="Iron Bars"
-                        class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply transition-opacity duration-300">
+                <!-- Right: Image Slider -->
+                <div class="bg-gray-200 rounded-lg aspect-placeholder relative overflow-hidden group">
+                    <div id="hero-slider-track" class="flex w-full h-full transition-transform duration-700 ease-in-out">
+                        <div class="w-full h-full flex-shrink-0 relative">
+                            <img src="https://storage.googleapis.com/takeapp/media/clybcju5i00010cl74iv17zf7.jpg" alt="Iron Bars" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply">
+                        </div>
+                        <div class="w-full h-full flex-shrink-0 relative">
+                            <img src="images/hero_metal_1.png" alt="Metal Beams" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply">
+                        </div>
+                        <div class="w-full h-full flex-shrink-0 relative">
+                            <img src="images/hero_metal_2.png" alt="Steel Coils" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply">
+                        </div>
+                        <div class="w-full h-full flex-shrink-0 relative">
+                            <img src="images/hero_metal_3.png" alt="Construction Rebars" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply">
+                        </div>
+                        <div class="w-full h-full flex-shrink-0 relative">
+                            <img src="images/hero_metal_4.png" alt="Metal Sheets" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-multiply">
+                        </div>
+                    </div>
+                    <!-- Slider Indicators -->
+                    <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2" id="hero-slider-dots">
+                        <!-- Dots will be injected by JS -->
+                    </div>
                 </div>
             </div>
         </section>
