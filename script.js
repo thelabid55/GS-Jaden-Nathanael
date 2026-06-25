@@ -257,7 +257,7 @@ tabBtns.forEach(btn => {
 // ==========================================
 const testimonials = [
     {
-        text: `"Menemukan besi struktural yang tepat dengan spesifikasi produk yang jelas dulunya memusingkan. Iron Mart merampingkan seluruh rantai pasokan kami. Sangat dianjurkan."`,
+        text: `"Menemukan besi struktural yang tepat dengan spesifikasi produk yang jelas dulunya memusingkan. Atap Satu Nusantara merampingkan seluruh rantai pasokan kami. Sangat dianjurkan."`,
         name: "Sarah Jenkins",
         role: "Arsitek Utama, Skyline Corp",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -269,7 +269,7 @@ const testimonials = [
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
     },
     {
-        text: `"Sebagai kontraktor, ketepatan waktu dan spesifikasi adalah segalanya. Iron Mart memberikan persis seperti yang dirinci di situs mereka. Layanan pelanggan mereka sangat profesional."`,
+        text: `"Sebagai kontraktor, ketepatan waktu dan spesifikasi adalah segalanya. Atap Satu Nusantara memberikan persis seperti yang dirinci di situs mereka. Layanan pelanggan mereka sangat profesional."`,
         name: "Marcus Ruhl",
         role: "Kontraktor Independen",
         image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -287,7 +287,7 @@ const testimonials = [
         image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
     },
     {
-        text: `"Iron Mart telah menjadi pemasok andalan kami untuk semua proyek besar. Kualitas konsisten dan waktu pengiriman yang andal tak terkalahkan."`,
+        text: `"Atap Satu Nusantara telah menjadi pemasok andalan kami untuk semua proyek besar. Kualitas konsisten dan waktu pengiriman yang andal tak terkalahkan."`,
         name: "Michael Chang",
         role: "Manajer Proyek, Global Builders",
         image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
