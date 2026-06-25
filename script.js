@@ -23,13 +23,12 @@ mobileLinks.forEach(link => {
 // Product Data
 // ==========================================
 const products = [
-    { id: 1, name: "Atap UPVC Alderon", category: "ordinary", image: "https://www.alderon.co.id/wp-content/uploads/alderon-lite-atap-upvc-alderon-inovasi-terbaru.png", description: "Semua atap uPVC Alderon diproduksi menggunakan bahan dengan formula spesial.", price: 120 },
-    { id: 2, name: "alderon lite", category: "ordinary", image: "https://jayasteel.co.id/wp-content/uploads/Alderon-Twinwall-Corrugated-2.jpg.", description: "Semua atap uPVC Alderon diproduksi menggunakan bahan dengan formula spesial.", price: 135 },
-    { id: 3, name: "alderon twinwall", category: "ordinary", image: "https://www.alderon.co.id/wp-content/uploads/alderon-twinwall-ID-830-asa-protection-garansi-20-tahun.webp", description: "High-quality carbon steel ideal for riveting, bolting, and welding in bridge and building construction.", price: 150 },
-    { id: 4, name: "Alderon coating series", category: "bridge", image: "https://www.alderon.co.id/wp-content/uploads/alderon-coating-series-rs.webp", description: "Heavy-duty structural steel optimized for demanding bridge fabrication and high-load structures.", price: 210 },
-    { id: 5, name: "Alderon eco", category: "bridge", image: "https://www.alderon.co.id/wp-content/uploads/Alderon-Eco-2-1.png", description: "Low alloy structural steel plate offering high yield strength, specifically formulated for bridges.", price: 195 },
-    { id: 6, name: "High Strength Alloy Plate", category: "alloy", image: "https://images.unsplash.com/photo-1501166222995-1db6cc8a149c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", description: "Premium alloy offering a superior strength-to-weight ratio for specialized industrial needs.", price: 320 },
-    { id: 7, name: "Weather Resistant Alloy", category: "alloy", image: "https://images.unsplash.com/photo-1621619856624-42fd193a0661?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", description: "Corrosion-resistant weathering steel designed for harsh outdoor and marine environments.", price: 290 }
+    { id: 1, name: "Atap UPVC Alderon", category: "ordinary", image: "https://www.alderon.co.id/wp-content/uploads/alderon-lite-atap-upvc-alderon-inovasi-terbaru.png", description: "Semua atap uPVC Alderon diproduksi menggunakan bahan dengan formula spesial.", price: 210000 },
+    { id: 2, name: "alderon lite", category: "ordinary", image: "https://jayasteel.co.id/wp-content/uploads/Alderon-Twinwall-Corrugated-2.jpg.", description: "Semua atap uPVC Alderon diproduksi menggunakan bahan dengan formula spesial.", price: 135000 },
+    { id: 3, name: "alderon twinwall", category: "ordinary", image: "https://www.alderon.co.id/wp-content/uploads/alderon-twinwall-ID-830-asa-protection-garansi-20-tahun.webp", description: "dibuat dari bahan uPVC yang telah diformulasi ulang dan dimutakhirkan guna meningkatkan kekuatan struktur bahan.", price: 150000 },
+    { id: 4, name: "Alderon coating series", category: "bridge", image: "https://www.alderon.co.id/wp-content/uploads/alderon-coating-series-rs.webp", description: "dirancang untuk menjawab kebutuhan konsumen akan bahan bangunan yang tidak hanya memberikan perlindungan maksimal.", price: 210000 },
+    { id: 5, name: "Alderon eco", category: "bridge", image: "https://www.alderon.co.id/wp-content/uploads/Alderon-Eco-2-1.png", description: "adalah produk atap uPVC yang dirancang untuk memenuhi kebutuhan atap yang tahan lama dengan harga yang terjangkau.", price: 95000 },
+    { id: 6, name: "Alderon T Series", category: "alloy", image: "https://www.alderon.co.id/wp-content/uploads/alderon-t-series1.png", description: "Dirancang khusus untuk menjadi pelengkap bagi segala keunggulan yang telah ditawarkan oleh atap Alderon 830R.", price: 120000 }
 ];
 
 // ==========================================
@@ -72,7 +71,7 @@ function showToast(message) {
         toast.classList.remove('translate-x-full', 'opacity-0');
     }, 10);
 
-    // Remove after 3s
+    // Hapus after 3s
     setTimeout(() => {
         toast.classList.add('translate-x-full', 'opacity-0');
         setTimeout(() => toast.remove(), 300);
@@ -80,7 +79,7 @@ function showToast(message) {
 }
 
 // ==========================================
-// Add to Cart
+// Tambah ke Keranjang
 // ==========================================
 function addToCart(productId, openCart = true) {
     const product = products.find(p => p.id === productId);
@@ -106,7 +105,7 @@ function addToCart(productId, openCart = true) {
 }
 
 // ==========================================
-// Remove from Cart
+// Hapus from Cart
 // ==========================================
 function removeFromCart(productId) {
     cart = cart.filter(item => item.id !== productId);
@@ -151,7 +150,7 @@ function updateCartUI() {
         cartItemsContainer.innerHTML = `
             <div class="h-full flex flex-col items-center justify-center text-textcol opacity-60">
                 <i data-lucide="shopping-cart" class="w-12 h-12 mb-4 opacity-50"></i>
-                <p>Your cart is empty.</p>
+                <p>Keranjang Anda kosong.</p>
             </div>
         `;
     } else {
@@ -166,15 +165,15 @@ function updateCartUI() {
                             <span class="w-8 text-center text-sm font-medium text-secondary border-x border-gray-200">${item.quantity}</span>
                             <button onclick="updateQuantity(${item.id}, 1)" class="w-6 h-6 flex items-center justify-center text-textcol hover:bg-gray-100 transition-colors">+</button>
                         </div>
-                        <span class="text-xs text-textcol opacity-70">x $${item.price.toFixed(2)}/ton</span>
+                        <span class="text-xs text-textcol opacity-70">x Rp.${item.price}</span>
                     </div>
                 </div>
                 <div class="text-right flex flex-col justify-between items-end gap-2">
                     <div class="font-bold text-secondary">
-                        $${(item.price * item.quantity).toFixed(2)}
+                        Rp.${(item.price * item.quantity)}
                     </div>
                     <button onclick="removeFromCart(${item.id})" class="text-xs text-red-500 hover:text-red-700 flex items-center gap-1">
-                        <i data-lucide="trash-2" class="w-3 h-3"></i> Remove
+                        <i data-lucide="trash-2" class="w-3 h-3"></i> Hapus
                     </button>
                 </div>
             </div>
@@ -186,9 +185,9 @@ function updateCartUI() {
     const discount = subtotal > 0 ? subtotal * 0.1 : 0; // 10% discount logic
     const total = subtotal - discount;
 
-    document.getElementById('cart-subtotal').textContent = `$${subtotal.toFixed(2)}`;
-    document.getElementById('cart-discount').textContent = `-$${discount.toFixed(2)}`;
-    document.getElementById('cart-total').textContent = `$${total.toFixed(2)}`;
+    document.getElementById('cart-subtotal').textContent = `Rp.${subtotal}`;
+    document.getElementById('cart-discount').textContent = `-Rp.${discount}`;
+    document.getElementById('cart-total').textContent = `Rp.${total}`;
 
     lucide.createIcons();
 }
@@ -201,7 +200,7 @@ function renderProducts(category) {
     const filteredProducts = products.filter(p => p.category === category);
 
     if (filteredProducts.length === 0) {
-        productGrid.innerHTML = '<p class="text-center col-span-full text-textcol opacity-70">No products found in this category.</p>';
+        productGrid.innerHTML = '<p class="text-center col-span-full text-textcol opacity-70">Tidak ada produk yang ditemukan dalam kategori ini.</p>';
         return;
     }
 
@@ -216,13 +215,13 @@ function renderProducts(category) {
                 <h3 class="text-lg font-bold text-secondary mb-2">${product.name}</h3>
                 <p class="text-sm text-textcol opacity-80 mb-6 flex-grow">${product.description}</p>
                 <div class="flex flex-col gap-3 mt-auto">
-                    <span class="text-xl font-bold text-secondary">$${product.price}/ton</span>
+                    <span class="text-xl font-bold text-secondary">Rp.${product.price}/Kg</span>
                     <div class="flex gap-2">
                         <button class="flex-1 px-4 py-2.5 bg-primary border border-secondary text-secondary text-sm font-medium rounded hover:bg-gray-50 transition-colors flex justify-center items-center gap-2" onclick="addToCart(${product.id}, false)">
-                            <i data-lucide="plus" class="w-4 h-4"></i> Add to Cart
+                            <i data-lucide="plus" class="w-4 h-4"></i> Tambah ke Keranjang
                         </button>
                         <button class="flex-1 px-4 py-2.5 bg-secondary text-primary text-sm font-medium rounded hover:bg-opacity-90 transition-colors flex justify-center items-center gap-2" onclick="addToCart(${product.id}, true)">
-                            <i data-lucide="shopping-cart" class="w-4 h-4"></i> Buy Now
+                            <i data-lucide="shopping-cart" class="w-4 h-4"></i> Beli Sekarang
                         </button>
                     </div>
                 </div>
@@ -258,39 +257,39 @@ tabBtns.forEach(btn => {
 // ==========================================
 const testimonials = [
     {
-        text: `"Finding the right structural iron with clear product specs used to be a headache. Iron Mart streamlined our entire supply chain. Highly recommended."`,
+        text: `"Menemukan besi struktural yang tepat dengan spesifikasi produk yang jelas dulunya memusingkan. Iron Mart merampingkan seluruh rantai pasokan kami. Sangat dianjurkan."`,
         name: "Sarah Jenkins",
-        role: "Lead Architect, Skyline Corp",
+        role: "Arsitek Utama, Skyline Corp",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
     },
     {
-        text: `"The quality of the materials is unmatched, and the website's ease of navigation makes placing large bulk orders simple. A fantastic resource for interior designers."`,
+        text: `"Kualitas bahannya tak tertandingi, dan navigasi situs web yang mudah membuat pemesanan pesanan massal menjadi sederhana. Sumber daya yang fantastis untuk desainer interior."`,
         name: "David Chen",
-        role: "Interior Designer, ModernSpaces",
+        role: "Desainer Interior, ModernSpaces",
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
     },
     {
-        text: `"As a contractor, timing and spec accuracy are everything. Iron Mart delivers exactly what is detailed on their site. Their customer service is incredibly professional."`,
+        text: `"Sebagai kontraktor, ketepatan waktu dan spesifikasi adalah segalanya. Iron Mart memberikan persis seperti yang dirinci di situs mereka. Layanan pelanggan mereka sangat profesional."`,
         name: "Marcus Ruhl",
-        role: "Independent Contractor",
+        role: "Kontraktor Independen",
         image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
     },
     {
-        text: `"The steel plates we received for our bridge project exceeded our expectations. The durability and strength were exactly as specified."`,
+        text: `"Pelat baja yang kami terima untuk proyek jembatan kami melebihi harapan kami. Ketahanan dan kekuatannya persis seperti yang ditentukan."`,
         name: "Elena Rodriguez",
-        role: "Civil Engineer, BuildRight Inc.",
+        role: "Insinyur Sipil, BuildRight Inc.",
         image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
     },
     {
-        text: `"Incredible selection of specialty alloys. Being able to find exactly what we needed so quickly saved us weeks on our timeline."`,
+        text: `"Pilihan paduan khusus yang luar biasa. Mampu menemukan apa yang kami butuhkan dengan sangat cepat menghemat waktu berminggu-minggu pada jadwal kami."`,
         name: "James Wilson",
-        role: "Procurement Manager, TechStruct",
+        role: "Manajer Pengadaan, TechStruct",
         image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
     },
     {
-        text: `"Iron Mart has become our go-to supplier for all major projects. Their consistent quality and reliable delivery times are unbeatable."`,
+        text: `"Iron Mart telah menjadi pemasok andalan kami untuk semua proyek besar. Kualitas konsisten dan waktu pengiriman yang andal tak terkalahkan."`,
         name: "Michael Chang",
-        role: "Project Manager, Global Builders",
+        role: "Manajer Proyek, Global Builders",
         image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
     }
 ];
@@ -350,3 +349,26 @@ window.addEventListener('resize', () => {
 // ==========================================
 renderProducts('ordinary');
 renderTestimonials();
+
+// ==========================================
+// Scroll Animation Observer
+// ==========================================
+const scrollObserverOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.15
+};
+
+const scrollObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, scrollObserverOptions);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    animatedElements.forEach(el => scrollObserver.observe(el));
+});

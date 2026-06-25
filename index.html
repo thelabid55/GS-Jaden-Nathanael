@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iron Mart - Quality Iron for Global Construction</title>
+    <title>Iron Mart - Besi Berkualitas untuk Konstruksi Global</title>
 
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -51,19 +51,20 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#about" class="text-textcol hover:text-tagcol font-medium transition-colors">About us</a>
-                    <a href="#products" class="text-textcol hover:text-tagcol font-medium transition-colors">Product
-                        Type</a>
-                    <a href="#pricing" class="text-textcol hover:text-tagcol font-medium transition-colors">Pricing</a>
-                    <a href="#contact" class="text-textcol hover:text-tagcol font-medium transition-colors">Location &
-                        Contact</a>
+                    <a href="#about" class="text-textcol hover:text-tagcol font-medium transition-colors">Tentang
+                        Kami</a>
+                    <a href="#products" class="text-textcol hover:text-tagcol font-medium transition-colors">Tipe
+                        Produk</a>
+                    <a href="#pricing" class="text-textcol hover:text-tagcol font-medium transition-colors">Harga</a>
+                    <a href="#contact" class="text-textcol hover:text-tagcol font-medium transition-colors">Lokasi &
+                        Kontak</a>
                 </div>
 
                 <!-- Action Buttons -->
                 <div class="hidden md:flex items-center space-x-4">
                     <button id="cart-btn-desktop"
                         class="px-5 py-2 border border-secondary text-secondary rounded hover:bg-gray-50 transition-colors font-medium flex items-center gap-2 relative">
-                        <i data-lucide="shopping-cart" class="w-4 h-4"></i> Product Cart
+                        <i data-lucide="shopping-cart" class="w-4 h-4"></i> Keranjang Produk
                         <span id="cart-count-desktop"
                             class="absolute -top-2 -right-2 bg-tagcol text-secondary text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center hidden">0</span>
                     </button>
@@ -81,14 +82,14 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-primary border-b border-gray-200 pb-4 px-4">
             <div class="flex flex-col space-y-3">
-                <a href="#about" class="text-textcol hover:text-tagcol font-medium">About us</a>
-                <a href="#products" class="text-textcol hover:text-tagcol font-medium">Product Type</a>
-                <a href="#pricing" class="text-textcol hover:text-tagcol font-medium">Pricing</a>
-                <a href="#contact" class="text-textcol hover:text-tagcol font-medium">Location & Contact</a>
+                <a href="#about" class="text-textcol hover:text-tagcol font-medium">Tentang Kami</a>
+                <a href="#products" class="text-textcol hover:text-tagcol font-medium">Tipe Produk</a>
+                <a href="#pricing" class="text-textcol hover:text-tagcol font-medium">Harga</a>
+                <a href="#contact" class="text-textcol hover:text-tagcol font-medium">Lokasi & Kontak</a>
                 <div class="flex flex-col space-y-2 pt-2">
                     <button id="cart-btn-mobile"
                         class="px-5 py-2 border border-secondary text-secondary rounded font-medium text-center flex items-center justify-center gap-2">
-                        <i data-lucide="shopping-cart" class="w-4 h-4"></i> Product Cart
+                        <i data-lucide="shopping-cart" class="w-4 h-4"></i> Keranjang Produk
                         <span id="cart-count-mobile"
                             class="bg-tagcol text-secondary text-xs font-bold rounded-full px-2 py-0.5 hidden">0</span>
                     </button>
@@ -101,25 +102,25 @@
     <main class="pt-20">
 
         <!-- Hero Section (Matches Wireframe 1 Top) -->
-        <section id="hero" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <section id="hero" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 animate-on-scroll">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <!-- Left: Text content -->
                 <div class="space-y-6">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight">
-                        Selling iron for global construction
+                        Menjual besi untuk konstruksi global
                     </h1>
                     <p class="text-lg text-textcol opacity-90 max-w-lg">
-                        The easiest way for architects, interior designers, contractors, and construction builders to
-                        find and buy the right metal for any construction project.
+                        Cara termudah bagi arsitek, desainer interior, kontraktor, dan pemborong untuk
+                        menemukan dan membeli logam yang tepat untuk proyek konstruksi.
                     </p>
                     <div class="flex flex-wrap gap-4 pt-2">
-                        <button
+                        <button onclick="window.location.href='#pricing'"
                             class="px-6 py-3 bg-secondary text-primary rounded font-medium hover:bg-opacity-90 transition-colors">
-                            Explore Products
+                            Eksplorasi Produk
                         </button>
-                        <button
+                        <button onclick="window.location.href='#products'"
                             class="px-6 py-3 border border-secondary text-secondary rounded font-medium hover:bg-gray-50 transition-colors">
-                            View Specs
+                            Lihat Spesifikasi
                         </button>
                     </div>
                 </div>
@@ -134,17 +135,19 @@
         </section>
 
         <!-- Features / About Section (Matches Wireframe 1 Bottom) -->
-        <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 border-t border-gray-100">
+        <section id="about"
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 border-t border-gray-100 animate-on-scroll">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
                 <!-- Left Column -->
                 <div class="space-y-4 md:sticky md:top-28 self-start">
-                    <span class="text-tagcol font-semibold tracking-wider uppercase text-sm">About Us</span>
+                    <span class="text-tagcol font-semibold tracking-wider uppercase text-sm">Tentang Kami</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-secondary">
-                        The preferred supplier for industry professionals
+                        Pemasok pilihan untuk profesional industri
                     </h2>
                     <p class="text-textcol opacity-90 text-lg">
-                        Our purpose is to help people find and buy the correct type of iron. We provide comprehensive
-                        product specs and reliable sourcing for your architectural and building needs.
+                        Tujuan kami adalah membantu orang menemukan dan membeli jenis besi yang tepat. Kami menyediakan
+                        spesifikasi produk yang komprehensif dan sumber yang andal untuk kebutuhan arsitektur dan
+                        bangunan Anda.
                     </p>
                 </div>
 
@@ -156,10 +159,11 @@
                             <i data-lucide="globe" class="w-6 h-6 text-secondary"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold text-secondary mb-2">Global Distribution</h3>
+                            <h3 class="text-xl font-bold text-secondary mb-2">Distribusi Global</h3>
                             <p class="text-textcol opacity-80">
-                                Sourcing and delivering high-quality iron materials for large-scale construction
-                                projects worldwide. We ensure you get what you need, wherever you build.
+                                Mencari dan mengirimkan bahan besi berkualitas tinggi untuk proyek konstruksi
+                                skala besar di seluruh dunia. Kami memastikan Anda mendapatkan apa yang Anda butuhkan,
+                                di mana pun Anda membangun.
                             </p>
                         </div>
                     </div>
@@ -169,10 +173,10 @@
                             <i data-lucide="refresh-cw" class="w-6 h-6 text-secondary"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold text-secondary mb-2">Detailed Product Specs</h3>
+                            <h3 class="text-xl font-bold text-secondary mb-2">Spesifikasi Produk Detail</h3>
                             <p class="text-textcol opacity-80">
-                                Access complete technical descriptions and specifications to ensure you are purchasing
-                                the exact structural integrity required for your designs.
+                                Akses deskripsi teknis dan spesifikasi lengkap untuk memastikan Anda membeli
+                                integritas struktural persis yang diperlukan untuk desain Anda.
                             </p>
                         </div>
                     </div>
@@ -182,10 +186,11 @@
                             <i data-lucide="star" class="w-6 h-6 text-secondary"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold text-secondary mb-2">Premium Quality Assurance</h3>
+                            <h3 class="text-xl font-bold text-secondary mb-2">Jaminan Kualitas Premium</h3>
                             <p class="text-textcol opacity-80">
-                                Trusted by top interior designers and contractors. Our inventory undergoes strict
-                                quality checks to meet all structural building standards.
+                                Dipercaya oleh desainer interior dan kontraktor top. Inventaris kami menjalani
+                                pemeriksaan
+                                kualitas yang ketat untuk memenuhi semua standar bangunan struktural.
                             </p>
                         </div>
                     </div>
@@ -194,197 +199,79 @@
         </section>
 
         <!-- Product Types Section (Wireframe Style) -->
-        <section id="products" class="py-16 md:py-24 border-t border-gray-100 bg-primary">
+        <section id="products" class="py-16 md:py-24 border-t border-gray-100 bg-primary animate-on-scroll">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 <!-- Section 1 -->
                 <div class="mb-16">
                     <div class="text-center max-w-2xl mx-auto mb-12">
-                        <span class="text-gray-500 font-medium tracking-wider text-sm block mb-2">Structural
-                            Materials</span>
-                        <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Primary Construction Iron</h2>
-                        <p class="text-textcol opacity-70">High-strength foundational materials designed to support
-                            massive infrastructure projects.</p>
+                        <span class="text-gray-500 font-medium tracking-wider text-sm block mb-2">Bahan
+                            Struktural</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Besi Konstruksi Utama</h2>
+                        <p class="text-textcol opacity-70">Bahan pondasi berkekuatan tinggi yang dirancang untuk
+                            mendukung
+                            proyek infrastruktur besar.</p>
                     </div>
 
-                    <div class="flex overflow-x-auto gap-6 pb-4 snap-x snap-mandatory hide-scroll">
-                        <!-- 8 Cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-4">
+                        <!-- 2 Cards -->
                         <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
+                            class="bg-primary border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow flex flex-col">
                             <i data-lucide="globe" class="w-6 h-6 text-gray-400 mb-4"></i>
                             <h3 class="text-lg font-bold text-secondary mb-3">Atap UPVC alderon</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Standard structural steel plate,
-                                perfect for general construction framing and welding applications.</p>
+                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Pelat baja struktural standar,
+                                sempurna untuk rangka konstruksi umum dan aplikasi pengelasan.</p>
                             <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
+                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Baca
+                                selengkapnya</a>
                         </div>
                         <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
-                            <i data-lucide="sun" class="w-6 h-6 text-gray-400 mb-4"></i>
-                            <h3 class="text-lg font-bold text-secondary mb-3">Q235B Beams</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Versatile carbon steel used
-                                extensively in bridges, buildings, and general engineering.</p>
-                            <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
-                        </div>
-                        <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
-                            <i data-lucide="grid" class="w-6 h-6 text-gray-400 mb-4"></i>
-                            <h3 class="text-lg font-bold text-secondary mb-3">A36 Carbon Steel</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">High-quality carbon steel ideal
-                                for riveting, bolting, and welding in building construction.</p>
-                            <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
-                        </div>
-                        <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
-                            <i data-lucide="box" class="w-6 h-6 text-gray-400 mb-4"></i>
-                            <h3 class="text-lg font-bold text-secondary mb-3">H-Beams & I-Beams</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Heavy-duty structural supports
-                                providing maximum load-bearing capabilities.</p>
-                            <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
-                        </div>
-                        <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
+                            class="bg-primary border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow flex flex-col">
                             <i data-lucide="layers" class="w-6 h-6 text-gray-400 mb-4"></i>
-                            <h3 class="text-lg font-bold text-secondary mb-3">Reinforcing Bars</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Essential rebar for concrete
-                                reinforcement, ensuring structural integrity and tensile strength.</p>
+                            <h3 class="text-lg font-bold text-secondary mb-3">Coating Series</h3>
+                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Teknologi ini meningkatkan
+                                ketahanan terhadap perubahan cuaca ekstrem, sehingga secara efektif memperpanjang umur
+                                pakai atap.
+                            </p>
                             <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
-                        </div>
-                        <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
-                            <i data-lucide="square" class="w-6 h-6 text-gray-400 mb-4"></i>
-                            <h3 class="text-lg font-bold text-secondary mb-3">Steel Tubes</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Hollow structural sections for
-                                lightweight yet robust architectural frameworks.</p>
-                            <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
-                        </div>
-                        <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
-                            <i data-lucide="shield" class="w-6 h-6 text-gray-400 mb-4"></i>
-                            <h3 class="text-lg font-bold text-secondary mb-3">Galvanized Coils</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Zinc-coated steel offering
-                                superior rust protection for exposed environments.</p>
-                            <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
-                        </div>
-                        <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
-                            <i data-lucide="anchor" class="w-6 h-6 text-gray-400 mb-4"></i>
-                            <h3 class="text-lg font-bold text-secondary mb-3">Marine Grade Iron</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Specially treated iron capable of
-                                withstanding saltwater and harsh maritime conditions.</p>
-                            <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
+                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Baca
+                                selengkapnya</a>
                         </div>
                     </div>
                 </div>
-
-                <hr class="border-gray-200 my-16">
-
                 <!-- Section 2 -->
                 <div>
                     <div class="text-center max-w-2xl mx-auto mb-12">
-                        <span class="text-gray-500 font-medium tracking-wider text-sm block mb-2">Specialty &
-                            Alloys</span>
-                        <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Advanced Alloy Solutions</h2>
-                        <p class="text-textcol opacity-70">Engineered metals tailored for specialized applications
-                            requiring unique structural properties.</p>
+                        <span class="text-gray-500 font-medium tracking-wider text-sm block mb-2">Khusus &
+                            Paduan</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Solusi Paduan Lanjutan</h2>
+                        <p class="text-textcol opacity-70">Logam rekayasa yang disesuaikan untuk aplikasi khusus
+                            yang memerlukan sifat struktural unik.</p>
                     </div>
 
-                    <div class="flex overflow-x-auto gap-6 pb-4 snap-x snap-mandatory hide-scroll">
-                        <!-- 8 Cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-4">
+                        <!-- 2 Cards -->
                         <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
+                            class="bg-primary border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow flex flex-col">
                             <i data-lucide="globe" class="w-6 h-6 text-gray-400 mb-4"></i>
-                            <h3 class="text-lg font-bold text-secondary mb-3">Q420 Bridge Plates</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Heavy-duty structural steel
-                                optimized for demanding bridge fabrication and high-load structures.</p>
+                            <h3 class="text-lg font-bold text-secondary mb-3">Eco Style</h3>
+                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Alderon ECO adalah produk atap
+                                uPVC yang dirancang untuk memenuhi kebutuhan atap yang tahan lama dengan harga yang
+                                terjangkau.</p>
                             <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
+                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Baca
+                                selengkapnya</a>
                         </div>
                         <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
+                            class="bg-primary border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow flex flex-col">
                             <i data-lucide="sun" class="w-6 h-6 text-gray-400 mb-4"></i>
-                            <h3 class="text-lg font-bold text-secondary mb-3">Weathering Steel</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Corrosion-resistant steel designed
-                                to naturally form a protective rust-like appearance.</p>
+                            <h3 class="text-lg font-bold text-secondary mb-3">T-Series 830 R</h3>
+                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Produk ini hadir memberikan
+                                tambahan keuntungan bagi para pengguna Alderon 830R agar dapat lebih menikmati
+                                keunggulan atap dingin dan mendapatkan manfaat pencahayaan alami.</p>
                             <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
-                        </div>
-                        <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
-                            <i data-lucide="grid" class="w-6 h-6 text-gray-400 mb-4"></i>
-                            <h3 class="text-lg font-bold text-secondary mb-3">High Strength Alloy</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Premium alloy offering a superior
-                                strength-to-weight ratio for specialized industrial needs.</p>
-                            <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
-                        </div>
-                        <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
-                            <i data-lucide="zap" class="w-6 h-6 text-gray-400 mb-4"></i>
-                            <h3 class="text-lg font-bold text-secondary mb-3">Heat-Resistant Iron</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Metals treated to maintain
-                                structural integrity under extreme temperature conditions.</p>
-                            <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
-                        </div>
-                        <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
-                            <i data-lucide="droplet" class="w-6 h-6 text-gray-400 mb-4"></i>
-                            <h3 class="text-lg font-bold text-secondary mb-3">Stainless Sheets</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Sleek, rust-proof materials
-                                perfect for both aesthetic cladding and sanitary environments.</p>
-                            <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
-                        </div>
-                        <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
-                            <i data-lucide="hexagon" class="w-6 h-6 text-gray-400 mb-4"></i>
-                            <h3 class="text-lg font-bold text-secondary mb-3">Titanium Blends</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Ultra-lightweight and
-                                exceptionally strong alloys for aerospace and high-tech builds.</p>
-                            <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
-                        </div>
-                        <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
-                            <i data-lucide="settings" class="w-6 h-6 text-gray-400 mb-4"></i>
-                            <h3 class="text-lg font-bold text-secondary mb-3">Machinable Steel</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Specifically formulated for ease
-                                of cutting, drilling, and custom fabrication.</p>
-                            <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
-                        </div>
-                        <div
-                            class="min-w-[280px] md:min-w-[320px] bg-primary border border-gray-200 rounded-lg p-6 snap-start flex-shrink-0 hover:shadow-md transition-shadow flex flex-col">
-                            <i data-lucide="tool" class="w-6 h-6 text-gray-400 mb-4"></i>
-                            <h3 class="text-lg font-bold text-secondary mb-3">Forged Tool Steel</h3>
-                            <p class="text-textcol opacity-70 mb-6 text-sm flex-grow">Incredibly hard and
-                                abrasion-resistant metal used for crafting high-end industrial tools.</p>
-                            <a href="#pricing"
-                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Read
-                                more</a>
+                                class="text-gray-600 hover:text-secondary font-medium text-sm transition-colors mt-auto">Baca
+                                selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -393,15 +280,15 @@
         </section>
 
         <!-- Product Cart Section (Replaces Pricing) -->
-        <section id="pricing" class="bg-primary py-16 md:py-24 border-y border-gray-100">
+        <section id="pricing" class="bg-primary py-16 md:py-24 border-y border-gray-100 animate-on-scroll">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Header -->
                 <div class="text-center max-w-2xl mx-auto mb-12">
-                    <span class="text-tagcol font-semibold tracking-wider uppercase text-sm block mb-2">Our
-                        Products</span>
+                    <span class="text-tagcol font-semibold tracking-wider uppercase text-sm block mb-2">Produk
+                        Kami</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Atap alderon</h2>
                     <p class="text-textcol opacity-90 mb-8">
-                        Browse our extensive collection of high-quality iron and steel plates for your projects.
+                        Jelajahi koleksi ekstensif pelat besi dan baja berkualitas tinggi kami untuk proyek Anda.
                     </p>
 
                     <!-- Category Tabs (Allows changing within products) -->
@@ -411,10 +298,10 @@
                             data-category="ordinary">Atap UPVC Alderon</button>
                         <button
                             class="px-6 py-2 bg-primary border border-secondary text-secondary font-medium rounded-full text-sm hover:bg-gray-50 transition-colors tab-btn"
-                            data-category="bridge">Bridge Plates</button>
+                            data-category="bridge">Coating & Eco</button>
                         <button
                             class="px-6 py-2 bg-primary border border-secondary text-secondary font-medium rounded-full text-sm hover:bg-gray-50 transition-colors tab-btn"
-                            data-category="alloy">Specialty Alloys</button>
+                            data-category="alloy">T Series</button>
                     </div>
                 </div>
 
@@ -427,11 +314,11 @@
         </section>
 
         <!-- Testimonials (Matches Wireframe 2 Middle) -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 animate-on-scroll">
             <!-- Header -->
             <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-tagcol font-semibold tracking-wider uppercase text-sm block mb-2">Reviews</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Client Testimonials</h2>
+                <span class="text-tagcol font-semibold tracking-wider uppercase text-sm block mb-2">Ulasan</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary">Testimoni Klien</h2>
             </div>
 
             <div id="testimonial-grid" class="grid grid-cols-1 md:grid-cols-3 gap-12 items-stretch"
@@ -446,10 +333,11 @@
         </section>
 
         <!-- Form / Contact / Location / Map Section -->
-        <section id="contact" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <section id="contact" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 animate-on-scroll">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Get in Touch</h2>
-                <p class="text-textcol opacity-90">Reach out for custom orders, bulk pricing, or visit our headquarters.
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Hubungi Kami</h2>
+                <p class="text-textcol opacity-90">Hubungi kami untuk pesanan khusus, harga grosir, atau kunjungi kantor
+                    pusat kami.
                 </p>
             </div>
 
@@ -458,42 +346,42 @@
                 <!-- Left Column: Form & Details -->
                 <div class="space-y-8 flex flex-col h-full">
                     <form class="space-y-4" onsubmit="event.preventDefault(); alert('Form submitted!');">
-                        <h3 class="text-xl font-bold text-secondary mb-4">Send an Inquiry</h3>
+                        <h3 class="text-xl font-bold text-secondary mb-4">Kirim Pertanyaan</h3>
                         <div>
-                            <input type="text" placeholder="Full Name"
+                            <input type="text" placeholder="Nama Lengkap"
                                 class="w-full border border-gray-300 px-4 py-3 rounded text-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary"
                                 required>
                         </div>
                         <div>
-                            <input type="email" placeholder="Email Address"
+                            <input type="email" placeholder="Alamat Email"
                                 class="w-full border border-gray-300 px-4 py-3 rounded text-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary"
                                 required>
                         </div>
                         <div>
-                            <input type="text" placeholder="Project or Company Name"
+                            <input type="text" placeholder="Nama Proyek atau Perusahaan"
                                 class="w-full border border-gray-300 px-4 py-3 rounded text-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary"
                                 required>
                         </div>
                         <button type="submit"
                             class="w-full py-3 bg-secondary text-primary font-bold rounded mt-2 hover:bg-opacity-90 transition-colors">
-                            Send Message
+                            Kirim Pesan
                         </button>
                         <p class="text-xs text-textcol opacity-60 mt-4">
-                            By contacting us, you agree to our Terms of Service and Privacy Policy.
+                            Dengan menghubungi kami, Anda menyetujui Syarat Layanan dan Kebijakan Privasi kami.
                         </p>
                     </form>
 
                     <div class="pt-8 border-t border-gray-200">
                         <h3 class="font-bold text-secondary mb-3 flex items-center gap-2">
-                            <i data-lucide="map-pin" class="w-4 h-4 text-tagcol"></i> Store Location
+                            <i data-lucide="map-pin" class="w-4 h-4 text-tagcol"></i> Lokasi Toko
                         </h3>
                         <p class="text-sm text-textcol opacity-80 mb-6">
-                            123 Builder's Avenue, Industrial District<br>
-                            Global Logistics Center, 90210
+                            Jalan Pembangun 123, Kawasan Industri<br>
+                            Pusat Logistik Global, 90210
                         </p>
 
                         <h3 class="font-bold text-secondary mb-3 flex items-center gap-2">
-                            <i data-lucide="share-2" class="w-4 h-4 text-tagcol"></i> Social Media
+                            <i data-lucide="share-2" class="w-4 h-4 text-tagcol"></i> Media Sosial
                         </h3>
                         <div class="flex gap-4">
                             <!-- Facebook -->
@@ -536,7 +424,7 @@
                 <div
                     class="h-full min-h-[400px] md:min-h-full bg-gray-200 rounded-lg overflow-hidden border border-gray-100">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.7281066703!2d-0.2416813!3d51.5287718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
+                        src="https://maps.google.com/maps?q=Gading+Serpong,+Jl.+Boulevard+Raya+Gading+Serpong,+Klp.+Dua,+Kecamatan+Kelapa+Dua,+Kabupaten+Tangerang,+Banten+15810&t=&z=13&ie=UTF8&iwloc=&output=embed"
                         width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen=""
                         loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
@@ -551,7 +439,7 @@
         class="fixed inset-y-0 right-0 w-full md:w-[400px] bg-primary shadow-2xl transform translate-x-full transition-transform duration-300 z-50 flex flex-col border-l border-gray-200">
         <div class="p-6 border-b border-gray-200 flex justify-between items-center bg-secondary text-primary">
             <h2 class="text-xl font-bold flex items-center gap-2">
-                <i data-lucide="shopping-cart" class="w-5 h-5 text-tagcol"></i> Your Cart
+                <i data-lucide="shopping-cart" class="w-5 h-5 text-tagcol"></i> Keranjang Anda
             </h2>
             <button id="close-cart-btn" class="text-primary hover:text-tagcol transition-colors">
                 <i data-lucide="x" class="w-6 h-6"></i>
@@ -562,27 +450,27 @@
             <!-- Cart items will be injected here -->
             <div class="h-full flex flex-col items-center justify-center text-textcol opacity-60">
                 <i data-lucide="shopping-cart" class="w-12 h-12 mb-4 opacity-50"></i>
-                <p>Your cart is empty.</p>
+                <p>Keranjang Anda kosong.</p>
             </div>
         </div>
 
         <div class="p-6 border-t border-gray-200 bg-gray-50">
             <div class="flex justify-between mb-2 text-sm text-textcol">
                 <span>Subtotal</span>
-                <span id="cart-subtotal" class="font-medium">$0.00</span>
+                <span id="cart-subtotal" class="font-medium">Rp.0</span>
             </div>
             <div class="flex justify-between mb-4 text-sm text-green-600 font-medium">
-                <span>Discount (10% bulk offer)</span>
-                <span id="cart-discount">-$0.00</span>
+                <span>Diskon (Penawaran massal 10%)</span>
+                <span id="cart-discount">-Rp.0</span>
             </div>
             <div class="flex justify-between mb-6 text-lg font-bold text-secondary border-t border-gray-200 pt-4">
                 <span>Total</span>
-                <span id="cart-total">$0.00</span>
+                <span id="cart-total">Rp.0</span>
             </div>
             <button
-                onclick="if(cart.length > 0) { alert('Proceeding to checkout with ' + cart.reduce((sum, item) => sum + item.quantity, 0) + ' items!'); cart = []; updateCartUI(); toggleCart(); } else { alert('Your cart is empty!'); }"
+                onclick="if(cart.length > 0) { alert('Melanjutkan ke pembayaran dengan ' + cart.reduce((sum, item) => sum + item.quantity, 0) + ' barang!'); cart = []; updateCartUI(); toggleCart(); } else { alert('Keranjang Anda kosong!'); }"
                 class="w-full py-3 bg-secondary text-primary font-bold rounded hover:bg-opacity-90 transition-colors">
-                Proceed to Checkout
+                Lanjut ke Pembayaran
             </button>
         </div>
     </div>
@@ -591,9 +479,9 @@
     <div id="cart-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity"></div>
 
     <!-- Footer -->
-    <footer class="bg-secondary text-primary py-8">
+    <footer class="bg-secondary text-primary py-8 animate-on-scroll">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm opacity-80">
-            <p>&copy; 2026 Iron Mart - Jaden Nathanael. All rights reserved.</p>
+            <p>&copy; 2026 Iron Mart - Jaden Nathanael. Hak cipta dilindungi undang-undang.</p>
         </div>
     </footer>
 
